@@ -1,0 +1,22 @@
+{
+  "name": "avril-lavigne-updated-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AvrilLavigne-Albums.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareemyasser8/Celebrity-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kareemyasser8/Celebrity-website/issues"
+  },
+  "homepage": "https://github.com/kareemyasser8/Celebrity-website#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
