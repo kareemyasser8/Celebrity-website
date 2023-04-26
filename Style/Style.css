@@ -5,8 +5,13 @@
 }
 
 @font-face {
-	font-family: Rift;
-	src: url('../fonts/Fort\ Foundry\ -\ Rift-Bold.otf');
+	font-family: 'Rift';
+	src: url('../fonts/Rift.otf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.ttf');
 }
 
 
