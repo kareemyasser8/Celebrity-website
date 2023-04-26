@@ -6,19 +6,18 @@
 
 @font-face {
 	font-family: 'Rift';
-	src: url('../fonts/Rift.otf');
-}
-
-@font-face {
+	src: url('../fonts/Rift.otf?v=2');
+  }
+  
+  @font-face {
 	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Bold.ttf');
-}
-
-
-@font-face {
+	src: url('../fonts/Montserrat-Bold.ttf?v=2');
+  }
+  
+  @font-face {
 	font-family: Roboto;
-	src: url('../fonts/Roboto-Regular.ttf');
-}
+	src: url('../fonts/Roboto-Regular.ttf?v=2');
+  }
 
 *:focus {
     outline: none;
