@@ -1,0 +1,574 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
+    background-color: #1e2a3a;
+	 margin: 0; padding: 0;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/*-------------------------------Navigation bar-------------------------*/
+
+.Nav{
+    background-color: #131112;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    
+}
+
+.website-logo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.website-logo:hover{
+	cursor: pointer;
+}
+
+.nav-items{
+    text-align: center;
+    list-style: none;
+}
+
+.nav-items a{
+    color:white;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Roboto;
+    padding: 12px 24px;
+}
+
+.nav-items a:hover{
+    color:#1da0be;
+    border-bottom: 5px solid white;
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+.login-section{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction:row;
+	align-items: center;
+    margin-right: 30px;
+    margin-top: 23px;
+    margin-bottom: -53px;
+    color: white;
+/*    font-family: rift Medium;*/
+	font-family: Roboto;
+    font-size: 20px;
+}
+
+.login-section img{
+   width: 30px;
+   border-radius: 50%;
+   margin-right: 12px;
+}
+
+/*-------------------------------End of Navigation bar-------------------------*/
+
+.BigWrapper{
+	width: 89%;
+	font-family: Roboto;
+	display: flex;
+	background-color: white;
+	height: auto;
+	margin: auto;
+}
+
+.Admin-Options-Wrapper{
+	background-color: #1b1b1b;
+	width: 25%;
+	min-height: 600px;
+}
+
+.Admin-Page-Wrapper{
+	background-color: #f8f8f8;
+	width: 75%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.Admin-Option{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-family: Roboto;
+	color: #bfbfc1;
+	padding: 15px;
+/*
+	border-top: 1px solid #282828;
+	border-bottom: 1px solid #161616;
+*/
+}
+
+.Admin-Option p{
+	width: 100%;
+	padding-left: 10%;
+/*	border: 1px solid red;*/
+}
+
+.Admin-Option:hover{
+	background-color: #090909;
+	cursor: pointer;
+	color :white;
+}
+
+.Page-contents-wrapper{
+	width: 85%;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.Page-title{
+	display: flex;
+	border-bottom: 1px solid #c4c4c4;
+	font-family: Roboto;
+	font-weight: 700;
+	color:#096373;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+
+.page-contents{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-small-wrapper{
+	width: 85%;
+	height: 100%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome-admin{
+	font-family: Roboto;
+	font-size: 25px;
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+.nav-items{
+    display: none;
+ }
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+@media screen and (max-width: 770px){
+	
+	/*-------------------------------Start of Nav bar------------------------*/
+	
+	 .Nav{
+    background-color: #131112;
+    height: 60px;
+    }
+     
+    .login-section{
+        display: none;
+    }
+    
+    #login_nav{	
+    display: block;
+    }
+    
+    .website-logo{
+    text-align: center;   
+    margin-top: 23px;
+    }
+    
+    .website-logo img{
+    width: 250px;
+    }
+    
+    .nav-items{
+    display: none;
+    }
+    
+    label{
+        display: block;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        padding-bottom: 2px;
+        background-color: #131112;
+        width: 34px;
+        margin-left: 10px;
+        margin-top: -47px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        cursor: pointer;
+    }
+    
+     #toggle:checked + .nav-items{
+        display: block;
+        width: 100%;
+        justify-content: center;
+        background-color: #1d1a1c;
+        position: relative;
+        margin-top: 10px; 
+        z-index: 10;
+    }
+    
+     #toggle:checked + .nav-items a{
+         display: block;
+		 text-align: left;
+         font-size: 18px;
+		 color: #bfbfc1;
+         border-bottom: 1px solid #282828;
+    }
+    
+    #toggle:checked + .nav-items a:hover{
+             display: block;
+			color: white;
+            background-color: #060606;
+            transition: 0.1s;           
+    }
+	
+	/*---------------------------End of Navbar---------------------------*/
+	
+	.BigWrapper{
+		min-height: 600px;
+	}
+	
+	.Admin-Options-Wrapper{
+		display: none;
+	}
+	
+	.Admin-Page-Wrapper{
+		width: 100%;
+	}
+	
+	.Page-title{
+		font-size: 25px;
+	}
+	
+	.welcome-admin{
+		font-size: 22px;
+	}
+}
+
+/*----------------------------- footer------------------------------------*/
+
+
+footer {
+    display: inline-flex;
+    width: 100%;
+    height: 200px;
+	background-color: #131112;
+/*    background-color: #6b696a;*/
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+}
+
+#footer_Section_1 {
+    width: 32%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer_Section_1 tr {
+    width: 100%;
+    height: 100%;
+}
+
+#footer_Section_1 tr td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#footer_Section_1 p {
+    color: white;
+    margin-right: -13px;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+#footer_Section_2 {
+    width: 31%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer_Section_2 tr {
+    width: 100%;
+    height: 100%;
+}
+
+#footer_Section_2 tr td {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#footer_Section_2 p {
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+/*-----------------------------------------------------------------*/
+/*                 Responsive for small screens                    */
+/*-----------------------------------------------------------------*/
+@media screen and (max-width:767px) {
+    footer {
+        height: 300px;
+    }
+
+    #footer_Section_2 p {
+        font-size: 12px;
+    }
+}
+
+
+.form-header{
+	font-family: Roboto;
+	padding-bottom: 20px;
+	display: flex;
+	font-size: 20px;
+	color: #99a2a9;
+	flex-direction: row;
+}
+
+
+.form-text-inputs{
+	width:100%;
+	height: 40px;
+	border: 1px solid #bababa;
+	font-size: 17px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.form-text-inputs::placeholder{
+	color: #b5b5b5;
+}
+
+.form-text-inputs:nth-last-child(1){
+	width:100%;
+	height: 140px;
+	border: 1px solid #bababa;
+	font-size: 17px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.form-text-inputs:focus{
+	border: 1px solid #636363;
+}
+
+textarea {
+  resize: none;
+  padding: 20px;
+  font-family: Roboto;
+  font-size: 17px;
+  outline: none;
+	overflow: auto;
+}
+
+textarea:focus{
+	border: 1px solid #636363;
+}
+
+.upload-image-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.upload-image-row img{
+	max-width: 100px;
+	margin-left: 5px;
+}
+
+@media screen and (max-width:770px){
+	.upload-image-row{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+	
+	.upload-image-row img{
+		margin-top: 10px;
+	}
+	
+}
+
+.Submit{
+	display: flex;
+	font-family: Roboto;
+	text-transform: uppercase;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin: auto;	
+	margin-top: 30px;
+	width:180px;
+	height:40px;
+	background-color: #309a99;
+	border-radius: 55px;
+}
+
+.Submit:hover{
+	transform: scale(1.06);
+/*	filter: brightness(110%);*/
+	cursor: pointer;
+}
+
+
+.Error-msg{
+	color:#eb1919;
+	margin-top: 20px;
+	display: none;
+}
+
+
+.Date-row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.Date-detail-row{
+	margin-right:10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	align-items: center;
+	display: flex;
+	padding-right: 50px;
+	
+}
+
+.Drop-down-list{
+    padding: 5px;
+	font-family: Roboto;
+    font-size: 16px;
+    line-height: 1;
+    border: 1px solid #b0b0b0;
+	border-radius: 5px;
+	color: #595959;
+/*	background-color: #d4d4d4;*/
+    height: 34px;
+}
+
+
+.Drop-down-list:focus{
+	border: 1px solid #636363;
+}
+
+
+.Date-header{
+	color: #424242;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.time-input{
+	width:70px;
+	height: 40px;
+	border: 1px solid #bababa;
+	font-size: 17px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+ input[type=number] {
+        /*for absolutely positioning spinners*/
+        position: relative; 
+	 	text-align: center;
+        padding-right: 5px;
+}
+
+
+.time-input:focus{
+	border: 1px solid #636363;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

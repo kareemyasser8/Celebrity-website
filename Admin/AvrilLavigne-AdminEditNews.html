@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Avril Lavigne - Edit News</title>
+        <link rel = "stylesheet" href = "../Style/AdminStyle.css">
+    </head>
+    <body>
+		<div class = "Nav">
+               
+            <div class = "login-section"> 
+               <img src = "../Images/default%20profile%20picture.png">
+               <p>Kareem</p>
+           </div>
+           
+            <div class = "website-logo">
+                <img src= "../Images/Avril%20lavigne%20logo.png">
+            </div>
+           
+<!--           This is for the toggle box on the left of the screen -->
+                <label for= "toggle">&#9776;</label>
+                <input type = "checkbox" id = "toggle">
+
+            <div class= "nav-items">
+                <li>
+                    <a href = "AvrilLavigne-AdminDashboard.html">Home</a>
+                    <a href = "AvrilLavigne-AdminAddNews.html">ِAdd news</a>
+                    <a href = "AvrilLavigne-AdminEditNews.html"  style = "border-left: 5px solid #28a2b8;">Edit News</a>
+                    <a href = "AvrilLavigne-AdminAddEvents.html">Add events</a>
+                    <a href = "AvrilLavigne-Photos.html">Delete events</a>
+                    <a href = "AvrilLavigne-Events.html">Ban Account</a>
+					<a href = "AvrilLavigne-Events.html">Delete Account</a>
+                    <a href = "#" id= "login_nav">Logout</a>
+                </li>
+            </div>
+                
+       </div>
+		
+		
+		
+		<div class = "BigWrapper">
+			<div class = "Admin-Options-Wrapper">
+				
+				<hr style=" border: 0px; margin-top: 100px; border-bottom:1px solid #282828">
+				<a href = "AvrilLavigne-AdminDashboard.html">
+					<div class = "Admin-Option">
+						<p>Home</p>
+					</div>
+			    </a>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				
+				<a href = "AvrilLavigne-AdminAddNews.html">
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Add news</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				</a>
+				
+				<a href = "AvrilLavigne-AdminEditNews.html">
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option" style = "border-left: 5px solid #28a2b8;">
+					<p style = "margin-left: -5px;">Edit news</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				</a>	
+				
+				<a href = "AvrilLavigne-AdminAddEvents.html">
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Add events</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				</a>
+				
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Delete events</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Ban Account</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Delete Account</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+			</div>
+			
+			
+			<div class = "Admin-Page-Wrapper">
+				<div class = "Page-contents-wrapper">
+					<div class = "Page-title">
+						Edit news
+					</div>
+					
+					<div class = "page-contents">
+						<div class = "page-small-wrapper">
+							<div class = "form-header">
+								Edit Title
+							</div>
+							
+							<input type = "text" class = "form-text-inputs">
+							
+							<div class = "Error-msg">
+								*Please add the title
+							</div>
+							
+							
+							<div class = "form-header" style = "margin-top: 40px;">
+								Edit Description
+							</div>
+							
+							<textarea wrap ="hard" rows="10" cols="50"></textarea>
+							
+							<div class = "Error-msg">
+								*Please add the title
+							</div>
+							
+							<div class = "form-header" style = "margin-top: 40px;">
+								Add Image
+							</div>
+							
+							<div class = "upload-image-row">
+								<input type = "file" id="imgInp">
+								<img id="blah" src="#" alt="your image" style="display: none" />
+							</div>
+							
+							<div class = "Error-msg">
+								*Please add the title
+							</div>
+							
+							
+							<div class ="Submit">
+								Submit
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+        
+	<footer>
+        <div id="footer">
+            <table id="footer_Section_1">
+                <tr>
+                    <td>
+                        <p>Connect With us</p>
+                    </td>
+                    <td class="footer_img">
+                        <p style="color: white; font-family: Rift Light; font-size: 47px;">|</p>
+                    </td>
+                    <td class="footer_img"><a href="https://www.facebook.com/avrillavigne/"><img id="FB_icon_img" src="../images/facebook%20small%20icon.png" alt="Facebook icon"></a></td>
+                    <td class="footer_img"><a href="https://twitter.com/AvrilLavigne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img id="twitter_icon_img" src="../images/twitter%20small%20icon.png" alt="Twitter icon"></a></td>
+                    <td class="footer_img"><a href="https://www.instagram.com/avrillavigne/?hl=en"><img id="Insta_icon_img" src="../images/instagram%20small%20icon.png" alt="Instagram icon"></a></td>
+                    <td class="footer_img"><a href="https://www.youtube.com/channel/UC_k8KFBzEf0uQ8LRFSAgSUA"><img id="Youtube_icon_img" src="../images/youtube%20small%20icon.png" alt="Youtube icon"></a></td>
+                </tr>
+            </table>
+            <table id="footer_Section_2">
+                <tr>
+                    <td>
+                        <p>Avril lavigne 2019</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ALL RIGHTS RESERVED</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+	<script src ="AvrilLavigne-AdminAddNews.js"></script>			
+    </body>
+	 <script> 
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementsByClassName("Nav")[0];
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+   
+    </script>
+  
+</html>

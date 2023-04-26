@@ -1,0 +1,39 @@
+Drop Database SmartMotorshopMini;
+Create Database SmartMotorshopMini;
+
+Create Table Person(
+	Person_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	FirstName VARCHAR(50) not null,
+	LastName VARCHAR(50) not null,
+	Age int not null,
+	gender VARCHAR(1) not null
+);
+
+
+Create Table Account(
+	Username VARCHAR(50) NOT NULL PRIMARY KEY,
+	password VARCHAR(50) not null,
+	IS_Banned VARCHAR(1) not null,
+	IS_Admin VARCHAR(1) not null,
+	P_ID int not null,
+	FOREIGN KEY (P_ID) REFERENCES Person(Person_ID)
+);
+
+Create Table News(
+	News_ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Title VARCHAR(270) not null,
+	Description VARCHAR(3000) not null,
+	News_Image VARCHAR(200) not null,
+	News_Date VARCHAR(30) not null
+);
+
+
+INSERT INTO Person(Person_ID, FirstName, LastName, Age, gender)
+VALUES ('1','Kareem', 'Yasser', '22', 'm');
+
+
+INSERT INTO Account(Username , password, IS_Banned, IS_Admin,P_ID)
+VALUES ('Karim162176', '123', 'n', 'y','1');
+
+
+SELECT * FROM Person INNER JOIN Account ON Person.Person_ID=Account.P_ID;

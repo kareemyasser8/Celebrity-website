@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Avril Lavigne - Add Events</title>
+        <link rel = "stylesheet" href = "../Style/AdminStyle.css">
+    </head>
+    <body>
+		<div class = "Nav">
+               
+           <div class = "login-section"> 
+               <img src = "../Images/default%20profile%20picture.png">
+               <p>Kareem</p>
+           </div>
+           
+            <div class = "website-logo">
+                <img src= "../Images/Avril%20lavigne%20logo.png">
+            </div>
+           
+<!--           This is for the toggle box on the left of the screen -->
+                <label for= "toggle">&#9776;</label>
+                <input type = "checkbox" id = "toggle">
+
+            <div class= "nav-items">
+                <li>
+                    <a href = "AvrilLavigne-AdminDashboard.html">Home</a>
+                    <a href = "AvrilLavigne-AdminAddNews.html">ِAdd news</a>
+                    <a href = "AvrilLavigne-AdminEditNews.html">Edit News</a>
+                    <a href = "AvrilLavigne-AdminAddEvents.html" style = "border-left: 5px solid #28a2b8;">Add events</a>
+                    <a href = "AvrilLavigne-Photos.html">Delete events</a>
+                    <a href = "AvrilLavigne-Events.html">Ban Account</a>
+					<a href = "AvrilLavigne-Events.html">Delete Account</a>
+                    <a href = "#" id= "login_nav">Logout</a>
+                </li>
+            </div>
+                
+       </div>
+		
+		
+		
+		<div class = "BigWrapper">
+			<div class = "Admin-Options-Wrapper">
+				
+				<hr style=" border: 0px; margin-top: 100px; border-bottom:1px solid #282828">
+				<a href = "AvrilLavigne-AdminDashboard.html">
+					<div class = "Admin-Option">
+						<p>Home</p>
+					</div>
+			    </a>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				
+				<a href = "AvrilLavigne-AdminAddNews.html">
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p style = "margin-left: -5px;">Add news</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				</a>
+				
+				<a href = "AvrilLavigne-AdminEditNews.html">
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Edit news</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				</a>
+				
+				<a href="AvrilLavigne-AdminAddEvents.html">
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option" style = "border-left: 5px solid #28a2b8;">
+					<p>Add events</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				</a>
+				
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Delete events</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Ban Account</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #161616">
+				
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+				<div class = "Admin-Option">
+					<p>Delete Account</p>
+				</div>
+				<hr style=" border: 0px; border-bottom:1px solid #282828">
+			</div>
+			
+			
+			<div class = "Admin-Page-Wrapper">
+				<div class = "Page-contents-wrapper">
+					<div class = "Page-title">
+						Add Events
+					</div>
+					
+					<div class = "page-contents">
+						<div class = "page-small-wrapper">
+							<div class = "form-header">
+								Add Event Name
+							</div>
+							
+							<input type = "text" class = "form-text-inputs">
+							
+							<div class = "Error-msg">
+								*Please add the title
+							</div>
+							
+							
+							<div class = "form-header" style = "margin-top: 40px; padding-bottom: 10px;">
+								Add Event Date
+							</div>
+							
+							
+							<div class = "Date-row">
+								
+								<div class = "Date-detail-row">
+									
+									<div class = "Date-header">
+										Day
+									</div>
+									
+									<select class = "Drop-down-list" id = "WordDays">
+									  <option value="Saturday">Saturday</option>
+									  <option value="Sunday">Sunday</option>
+									  <option value="Monday">Monday</option>
+									  <option value="Tuesday">Tuesday</option>
+									  <option value="Wednesday">Wednesday</option>
+									  <option value="Thursday">Thursday</option>
+									  <option value="Friday">Friday</option>
+									</select>
+									
+								</div>	
+								
+								
+								<div class = "Date-detail-row">
+									
+									<div class = "Date-header">
+										Month
+									</div>
+									
+									<select class = "Drop-down-list" style= "width: 65px;" id = "WordMonths">
+									  <option value="Jan">Jan</option>
+									  <option value="Feb">Feb</option>
+									  <option value="Mar">Mar</option>
+									  <option value="Apr">Apr</option>
+									  <option value="May">May</option>
+									  <option value="Jun">Jun</option>
+									  <option value="Jul">Jul</option>
+									  <option value="Aug">Aug</option>
+									  <option value="Sep">Sep</option>
+									  <option value="Oct">Oct</option>
+									  <option value="Nov">Nov</option>
+									  <option value="Dec">Dec</option>	
+									</select>
+									
+								</div>	
+								
+								
+								<div class = "Date-detail-row">
+									
+									<div class = "Date-header">
+										Day Num
+									</div>
+									
+									<select class = "Drop-down-list" style= "width: 53px;" id = "MonthDays">
+									  <option value="1">1</option>
+									  <option value="2">2</option>
+									  <option value="3">3</option>
+									  <option value="4">4</option>
+									  <option value="5">5</option>
+									  <option value="6">6</option>
+									  <option value="7">7</option>
+									  <option value="8">8</option>
+									  <option value="9">9</option>
+									  <option value="10">10</option>
+									  <option value="11">11</option>
+									  <option value="12">12</option>
+									  <option value="13">13</option>
+									  <option value="14">14</option>
+									  <option value="15">15</option>
+									  <option value="16">16</option>
+									  <option value="17">17</option>
+									  <option value="18">18</option>
+									  <option value="19">19</option>
+									  <option value="20">20</option>
+									  <option value="21">21</option>
+									  <option value="22">22</option>
+									  <option value="23">23</option>
+									  <option value="24">24</option>	
+									  <option value="25">25</option>
+									  <option value="26">26</option>
+									  <option value="27">27</option>
+									  <option value="28">28</option>
+									  <option value="29">29</option>
+									  <option value="30">30</option>
+									  <option value="31">31</option>		
+									</select>
+									
+								</div>
+								
+								
+								
+								
+							</div>
+							
+							
+							<div class = "form-header" style = "margin-top: 40px; padding-bottom: 10px;">
+								Add Event Time
+							</div>
+							
+							<div class = "Date-row">
+								<div class = "Date-detail-row" style = "padding: 0px;">
+									<div class = "Date-header">
+										Hrs
+									</div>
+									
+									<input type = "number" min="1" max="12" class = "time-input" id = "HrsSlider" value="7">	
+								</div>
+								
+								<div class = "Date-detail-row" style = "padding: 0px;">:</div>
+								
+								<div class = "Date-detail-row" style = "padding: 0px;">
+									<div class = "Date-header">
+										Min
+									</div>
+									
+									<input type = "number" min="00" max="59" class = "time-input" id = "MinsSlider" value="00">	
+								</div>
+								
+								<div class = "Date-detail-row" style = "padding: 0px; color:gray">PM</div>
+							</div>
+							
+							<div class = "form-header" style = "margin-top: 40px; padding-bottom: 10px;">
+								Premium Tickets 
+							</div>
+							
+							<div class = "Date-row">
+								<div class = "Date-detail-row" style = "padding: 0px;">
+									<div class = "Date-header">
+										Price
+									</div>
+									
+									<input type = "text" maxlength="2" class = "time-input" id = "PremPrice">	
+								</div>
+								
+								<div class = "Date-detail-row" style = "color:gray">$</div>
+								
+								<div class = "Date-detail-row" style = "padding: 0px;">
+									<div class = "Date-header">
+										Available Tickets
+									</div>
+									
+									<input type = "text" maxlength="3" class = "time-input" id = Premavailable>	
+								</div>
+							</div>
+							
+							<div class = "Error-msg">
+								*Please add the title
+							</div>
+							
+							<div class = "form-header" style = "margin-top: 40px; padding-bottom: 10px;">
+								Silver Tickets 
+							</div>
+							
+							<div class = "Date-row">
+								<div class = "Date-detail-row" style = "padding: 0px;">
+									<div class = "Date-header">
+										Available Tickets
+									</div>
+									
+									<input type = "text" maxlength="3" class = "time-input" id = "Silveravailble">	
+								</div>
+							</div>
+							
+							<div class = "Error-msg">
+								*Please add the title
+							</div>
+							
+							
+							
+							
+							
+							
+							<div class ="Submit">
+								Submit
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+        
+	<footer>
+        <div id="footer">
+            <table id="footer_Section_1">
+                <tr>
+                    <td>
+                        <p>Connect With us</p>
+                    </td>
+                    <td class="footer_img">
+                        <p style="color: white; font-family: Rift Light; font-size: 47px;">|</p>
+                    </td>
+                    <td class="footer_img"><a href="https://www.facebook.com/avrillavigne/"><img id="FB_icon_img" src="../images/facebook%20small%20icon.png" alt="Facebook icon"></a></td>
+                    <td class="footer_img"><a href="https://twitter.com/AvrilLavigne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img id="twitter_icon_img" src="../images/twitter%20small%20icon.png" alt="Twitter icon"></a></td>
+                    <td class="footer_img"><a href="https://www.instagram.com/avrillavigne/?hl=en"><img id="Insta_icon_img" src="../images/instagram%20small%20icon.png" alt="Instagram icon"></a></td>
+                    <td class="footer_img"><a href="https://www.youtube.com/channel/UC_k8KFBzEf0uQ8LRFSAgSUA"><img id="Youtube_icon_img" src="../images/youtube%20small%20icon.png" alt="Youtube icon"></a></td>
+                </tr>
+            </table>
+            <table id="footer_Section_2">
+                <tr>
+                    <td>
+                        <p>Avril lavigne 2019</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ALL RIGHTS RESERVED</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+	<script src ="AvrilLavigne-AdminAddEventsValidation.js"></script>			
+    </body>
+	 <script> 
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementsByClassName("Nav")[0];
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+   
+    </script>
+  
+</html>

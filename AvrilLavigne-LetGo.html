@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src = "AvrilLavigne-Bio-JQuery.js"></script>
+		<script src = "AvrilLavigne-Albums.js"></script>
+        <title>Avril Lavigne - Let go</title>
+        <link rel = "stylesheet" href = "Style/Style.css">
+    </head>
+    <body>
+       <div class = "Nav">
+               
+           <div class = "login-section"> 
+               <img src = "Images/login%20logo.png">
+               <p>Login</p>
+           </div>
+           
+            <div class = "website-logo">
+                <img src= "Images/Avril%20lavigne%20logo.png">
+            </div>
+           
+<!--           This is for the toggle box on the left of the screen -->
+                <label for= "toggle">&#9776;</label>
+                <input type = "checkbox" id = "toggle">
+
+            <div class= "nav-items">
+                <li>
+                    <a href = "AvrilLavigne-Home.html">Home</a>
+                    <a href = "AvrilLavigne-Bio.html">Bio</a>
+                    <a href = "AvrilLavigne-Music.html">Music</a>
+                    <a href = "AvrilLavigne-%20Videos.html">Videos</a>
+                    <a href = "AvrilLavigne-Photos.html">Photos</a>
+                    <a href = "AvrilLavigne-Events.html">Events</a>
+                    <a href = "#" id= "login_nav">Login</a>
+                </li>
+            </div>
+                
+       </div>
+		
+		
+        
+<!-----------------End of the Navigation bar section ----------------------------------------------->
+		
+			<div class = "Album-wrapper">
+				
+				
+				<div class ="shortcuts-cloud">
+					<span class = "close-icon" style = "color: dimgrey">&#10006</span>
+					<div class = "shortcut-items">
+							<strong style ="margin-left: -3px;">Short cuts that can be used with keyboard</strong><br>
+							<p><strong style ="margin-left: -3px;font-size: 11px;">Pause/Play = "P"</strong></p>
+							<p><strong style ="margin-left: -3px;font-size: 11px;">Mute = "M"</strong></p>
+							<p><strong style ="margin-left: -3px; font-size: 11px;">Seek Forward = "right arrow"</strong></p>
+							<p><strong style ="margin-left: -3px; font-size: 11px;">Seek Backward = "left arrow"</strong></p>
+					</div>
+				</div>
+			
+				
+				<a href = "AvrilLavigne-Music.html"><img class = "back-btn" src ="Images/back-button.png"></a>
+			
+					<div class = "Album-details">
+						<div class = "Album-cover">
+							<img src = "Images/Let%20go%20-%20album%20cover%20-%20music%20page.png"
+								 style = "width: 225px;">		
+						</div>
+						
+						<div class = "details-section">
+							<p><span style = "color: white;">ALBUM</span></p>
+							<div class ="Album-title">Let go</div>
+							<p style = "margin-bottom: 5px;">By <span style = "color: white;">Avril Lavigne</span></p>
+							<p>2003 . 13 songs, 48 min</p>
+							
+							<button onclick = "PauseAndPlay()" class="play-btn">PLAY</button>
+							
+						</div>
+					</div>
+				
+				
+				<table class = "songs">
+					<tr>
+						<th style = " width:60px; color:#9d9d9d">#</th>
+						<th style = "color:#9d9d9d">TITLE</th>
+						<th style = " width: 100px; text-align: center; color:#9d9d9d">DURATION</th>
+					</tr>
+					<tr class ="song-row">
+						<td style = " width:60px;"><span class ="song_number">1</span>
+						<span class = "song_number_play_hover" onClick = "setIndex(0,0)"><i class="fa fa-play"></i></span>
+						<span class = "song_current_playing_hover"><img src = "Images/current-playing-icon.png"></span>	
+						</td>
+						<td class = "song_name_in_the_album">Losing Grip</td>
+						<td class = "song_duration_in_the_album" style = " width: 100px; text-align: center;">3:54</td>
+					</tr>
+					
+					<tr class ="song-row">
+						<td style = " width:60px;"><span class ="song_number">2</span>
+						<span class = "song_number_play_hover" onClick = "setIndex(0,1)"><i class="fa fa-play"></i></span>
+						<span class = "song_current_playing_hover"><img src = "Images/current-playing-icon.png"></span>			
+						</td>
+						<td class = "song_name_in_the_album">Complicated</td>
+						<td class = "song_duration_in_the_album" style = " width: 100px; text-align: center;">4:06</td>
+					</tr>
+					
+					<tr class ="song-row">
+						<td style = " width:60px;"><span class ="song_number">3</span>
+						<span class = "song_number_play_hover" onClick = "setIndex(0,2)"><i class="fa fa-play"></i></span>
+						<span class = "song_current_playing_hover"><img src = "Images/current-playing-icon.png"></span>			
+						</td>
+						<td class = "song_name_in_the_album">Sk8er Boi</td>
+						<td class = "song_duration_in_the_album" style = " width: 100px; text-align: center;">3:24</td>
+					</tr>
+					
+					<tr class ="song-row">
+						<td style = " width:60px; border: 0px; "><span class ="song_number">4</span>
+						<span class = "song_number_play_hover" onClick = "setIndex(0,3)"><i class="fa fa-play"></i></span>
+						<span class = "song_current_playing_hover"><img src = "Images/current-playing-icon.png"></span>		
+						</td>
+						<td class = "song_name_in_the_album" style = "border: 0px;">I'm with you</td>
+						<td class = "song_duration_in_the_album" style = " width: 100px; text-align: center; border: 0px;">3:44</td>
+					</tr>
+					
+				
+				</table>
+				
+				<!-- The Modal -->
+			<div id="myModal" class="login_modal">
+	
+			  		<div class = "login-page-wrapper">
+						
+							<div class = "website-login-logo">
+								<span class = "login-close-icon" style = "font-family: Arial; position: absolute; right:0; top:0; margin-top: 7px; margin-right: 10px; cursor: pointer">X</span>
+								<img src = "Images/Avril%20lavigne%20logo.png">
+							</div>
+							
+							<div class = "login-registeration-row">
+									Login to your Account
+							</div>
+						
+							<div class = "login-small-wrapper">
+								<input class = "UserName-login-field" type = "text" placeholder= "Username">
+
+								<input class = "Password-login-field" type = "password" placeholder= "Password">
+								
+								<div class = "Login-Error-msg">*Invalid Username or Password</div>
+
+								<div class = "Login_btn_page">LOG IN</div>
+								
+								<div class = "login-horizontal-line">
+									<span style = "border-bottom: 1px solid #bababa;
+												   height: 15%;
+												   width: 100%;
+												   position: absolute;
+												   z-index: 3;"></span>
+									
+									<span style = "z-index: 5;
+												   background-color: #f4f4f4;
+												   padding-left: 10px;
+												   padding-right: 10px;
+												   font-weight: bold">OR</span>
+								</div>
+								
+								
+								<div class = "login-registeration-row">
+									Don't have an account?
+								</div>
+								
+								<a href = "AvrilLavigne-Registration.html" style = "text-decoration: none;"><div class = "Signup_btn_page">SIGN UP NOW</div></a>
+					
+								
+							</div>	
+					</div>
+			</div>
+			
+			<script src = "AvrilLavigne_Login.js"></script>
+				
+			
+        	</div>
+
+			<div class = "Audio-player-container">
+						<div class = "Song-details">
+							<div class ="Song-image">
+									<img src = "Images/Let%20go%20-%20album%20cover%20-%20music%20page.png">
+							</div>
+							
+							<div class = "Song-title-and-artist">
+								<p class = "song-title" id = "song-title">Losing Grip</p>
+								<p class = "song-artist">Avril Lavigne</p>
+							</div>
+						</div>
+				
+						<div class = "Audio-Display">
+							
+							<div class = "Audio-controls">
+								<div class = "play-backwards" onclick = "PlayPrevious()">
+									<img src = "Images/Playbackwards-button.png">
+								</div>
+
+								<div class = "play-button" onclick = "PauseAndPlay()">
+									<i class="fa fa-play"></i>
+									<i class="fa fa_pause">
+										<img src="Images/pause_icon.png">
+									</i>
+								</div>
+
+								<div class = "play-forwards" onclick="PlayNext()">
+									<img src = "Images/Playforwards-button.png">
+								</div>
+							</div>
+							
+							<div class = "seekbar">
+								<span class ="start-time">00:00</span>
+									<span class = "outer-seekbar" onclick="MoveSeekbar()">
+										<span class = "inner-seekbar">
+											<span class = "seekbar-circle"></span>
+										</span>
+									</span>
+													
+			
+								<span class ="end-time">00:00</span>
+							</div>
+						</div>
+				
+							<div class = "Volume-section">
+								<div class ="volume-icon" onclick = "MuteSound()">
+									<img class = "full-volume" src = "Images/Full-volume-icon.png">
+									<img class = "middle-volume" src = "Images/Middle-volume-icon.png">
+									<img class = "low-volume" src = "Images/low-volume-icon.png">
+									<img class = "muted-volume" src = "Images/Muted-volume-icon.png">
+								</div>
+								
+								<div class = "volume-seekbar">
+									<span class = "volume-outer-seekbar" onclick="MoveVolumeSeekbar()">
+										<span class = "volume-inner-seekbar">
+											<span class = "volume-seekbar-circle"></span>
+										</span>
+									</span>
+								</div>				
+							</div>
+						
+			</div>
+		
+			<style>
+			/*	This holds the elements of the Page content*/
+				
+			.Album-wrapper{
+				background-image: linear-gradient( #2a3b56  ,#121418 60%);
+				}
+		
+			</style>
+
+         <!--------------------- The end of the Music wrapper --------------------->
+
+        
+             <footer>
+        <div id="footer">
+            <table id="footer_Section_1">
+                <tr>
+                    <td>
+                        <p>Connect With us</p>
+                    </td>
+                    <td class="footer_img">
+                        <p style="color: white; font-family: Rift Light; font-size: 47px;">|</p>
+                    </td>
+                    <td class="footer_img"><a href="https://www.facebook.com/avrillavigne/"><img id="FB_icon_img" src="images/facebook%20small%20icon.png" alt="Facebook icon"></a></td>
+                    <td class="footer_img"><a href="https://twitter.com/AvrilLavigne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img id="twitter_icon_img" src="images/twitter%20small%20icon.png" alt="Twitter icon"></a></td>
+                    <td class="footer_img"><a href="https://www.instagram.com/avrillavigne/?hl=en"><img id="Insta_icon_img" src="images/instagram%20small%20icon.png" alt="Instagram icon"></a></td>
+                    <td class="footer_img"><a href="https://www.youtube.com/channel/UC_k8KFBzEf0uQ8LRFSAgSUA"><img id="Youtube_icon_img" src="images/youtube%20small%20icon.png" alt="Youtube icon"></a></td>
+                </tr>
+            </table>
+            <table id="footer_Section_2">
+                <tr>
+                    <td>
+                        <p>Avril lavigne 2019</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ALL RIGHTS RESERVED</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+        
+        
+    </body>
+    
+    <script> 
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementsByClassName("Nav")[0];
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+   
+    </script>
+</html>

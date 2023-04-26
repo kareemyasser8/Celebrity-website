@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avril Lavigne - Registration</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel = "stylesheet" href = "Style/Style.css">
+    </head>
+    <body>
+		
+       <div class = "Nav">
+               
+           <div class = "login-section"> 
+               <img src = "Images/login%20logo.png">
+               <p>Login</p>
+           </div>
+           
+            <div class = "website-logo">
+                <img src= "Images/Avril%20lavigne%20logo.png">
+            </div>
+           
+<!--           This is for the toggle box on the left of the screen -->
+                <label for= "toggle">&#9776;</label>
+                <input type = "checkbox" id = "toggle">
+
+            <div class= "nav-items">
+                <li>
+                    <a href = "AvrilLavigne-Home.html">Home</a>
+                    <a href = "AvrilLavigne-Bio.html">Bio</a>
+                    <a href = "AvrilLavigne-Music.html">Music</a>
+                    <a href = "AvrilLavigne-%20Videos.html">Videos</a>
+                    <a href = "AvrilLavigne-Photos.html">Photos</a>
+                    <a href = "AvrilLavigne-Events.html">Events</a>
+                    <a href = "#" id= "login_nav">Login</a>
+                </li>
+            </div>
+                
+       </div>
+        
+<!-----------------End of the Navigation bar section ----------------------------------------------->
+ 
+       
+        <div class = "Registration-wrapper">
+				<div class = "Page-title">
+					Sign Up
+					<hr style = "margin-bottom: 12px; border: 0; border-bottom: 1px solid #c4c4c4;">
+				</div>
+				
+					<div class = "Registration-white-wrapper">
+							<div class = "Registration-small-wrapper">
+									<div class = "Registration-Text">
+										Please fill in this form to create an account
+									</div>
+									
+								
+									<div class = "Registration-headers">
+										First Name
+									</div>
+
+									<input type = "text" class = "register-inputs" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+								
+									<div class = "Error-msg">
+										*Please enter the first name
+									</div>
+
+									<div class = "Registration-headers" style = "margin-top: 55px;">
+										Last Name
+									</div>
+
+									<input type = "text" class = "register-inputs" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+								
+									<div class = "Error-msg">
+										*Please enter the first name
+									</div>
+
+									<div class = "Registration-headers-gender" style = "margin-top: 55px;">
+										Gender
+									</div>
+
+									<div class = "radio-group" style ="margin-top: 0px">
+											<label class ="radio">
+												<input class ="radio_btn" type ="radio" value = "Male" name = "Gender">
+												<span></span>
+												<p>Male</p>
+
+											</label>
+
+											<label class = "radio">
+												<input class ="radio_btn" type ="radio" value = "Female" name = "Gender">
+												<span></span>
+												<p>Female</p>		
+											</label>
+
+									</div>
+								
+									<div class = "Error-msg">
+										*Please enter the first name
+									</div>
+									
+
+									<div class = "Registration-headers" style = "margin-top: 55px;">
+										Age
+									</div>
+
+									<input type = "text" maxlength= "2" class = "register-inputs" style = "width:70px">
+								
+									<div class = "Error-msg">
+										*Please enter the first name
+									</div>
+
+
+									<div class = "Registration-headers" style = "margin-top: 55px;">
+										Username
+									</div>
+
+									<input type = "text" class = "register-inputs">
+								
+									<div class = "Error-msg">
+										*Please enter the first name
+									</div>
+
+
+									<div class = "Registration-headers" style = "margin-top: 55px;">
+										Password
+									</div>
+
+									<input type = "text" class = "register-inputs">
+								
+									<div class = "Error-msg">
+										*Please enter the first name
+									</div>
+								
+									<div class = "Registration-Text" style = "margin-top: 40px; font-size: 14px; color: #99a2a9;">
+										By creating an account you agree to our Terms and Privacy
+									</div>
+								
+								
+									<div class = "Submit" style = "margin-top: 0px;">
+										SUBMIT
+									</div>
+
+
+
+							</div>
+					</div>
+					<style>
+						
+						.Registration-headers-gender{
+							font-family: Roboto;
+							padding-bottom: 20px;
+							display: flex;
+							font-size: 20px;
+							color: #99a2a9;
+							flex-direction: row;
+						}
+						
+						@media screen and (max-width:770px){
+							.Registration-headers-gender{
+								margin-bottom: 50px;
+							}
+						}
+						
+						
+						
+						
+			
+					</style>
+			
+			<!-- The Modal -->
+			<div id="myModal" class="login_modal">
+	
+			  		<div class = "login-page-wrapper">
+						
+							<div class = "website-login-logo">
+								<span class = "login-close-icon" style = "font-family: Arial; position: absolute; right:0; top:0; margin-top: 7px; margin-right: 10px; cursor: pointer">X</span>
+								<img src = "Images/Avril%20lavigne%20logo.png">
+							</div>
+							
+							<div class = "login-registeration-row">
+									Login to your Account
+							</div>
+						
+							<div class = "login-small-wrapper">
+								<input class = "UserName-login-field" type = "text" placeholder= "Username">
+
+								<input class = "Password-login-field" type = "password" placeholder= "Password">
+								
+								<div class = "Login-Error-msg">*Invalid Username or Password</div>
+
+								<div class = "Login_btn_page">LOG IN</div>
+								
+								<div class = "login-horizontal-line">
+									<span style = "border-bottom: 1px solid #bababa;
+												   height: 15%;
+												   width: 100%;
+												   position: absolute;
+												   z-index: 3;"></span>
+									
+									<span style = "z-index: 5;
+												   background-color: #f4f4f4;
+												   padding-left: 10px;
+												   padding-right: 10px;
+												   font-weight: bold">OR</span>
+								</div>
+								
+								
+								<div class = "login-registeration-row">
+									Don't have an account?
+								</div>
+								
+								<a href = "AvrilLavigne-Registration.html" style = "text-decoration: none;"><div class = "Signup_btn_page">SIGN UP NOW</div></a>
+					
+								
+							</div>	
+					</div>
+			</div>
+			
+			<script src = "AvrilLavigne_Login.js"></script>
+			
+        </div>
+        
+        
+        
+        
+         <!--------------------- The end of the home wrapper --------------------->
+    <footer>
+        <div id="footer">
+            <table id="footer_Section_1">
+                <tr>
+                    <td>
+                        <p>Connect With us</p>
+                    </td>
+                    <td class="footer_img">
+                        <p style="color: white; font-family: Rift Light; font-size: 47px;">|</p>
+                    </td>
+                    <td class="footer_img"><a href="https://www.facebook.com/avrillavigne/"><img id="FB_icon_img" src="images/facebook%20small%20icon.png" alt="Facebook icon"></a></td>
+                    <td class="footer_img"><a href="https://twitter.com/AvrilLavigne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img id="twitter_icon_img" src="images/twitter%20small%20icon.png" alt="Twitter icon"></a></td>
+                    <td class="footer_img"><a href="https://www.instagram.com/avrillavigne/?hl=en"><img id="Insta_icon_img" src="images/instagram%20small%20icon.png" alt="Instagram icon"></a></td>
+                    <td class="footer_img"><a href="https://www.youtube.com/channel/UC_k8KFBzEf0uQ8LRFSAgSUA"><img id="Youtube_icon_img" src="images/youtube%20small%20icon.png" alt="Youtube icon"></a></td>
+                </tr>
+            </table>
+            <table id="footer_Section_2">
+                <tr>
+                    <td>
+                        <p>Avril lavigne 2019</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ALL RIGHTS RESERVED</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+        
+        
+        
+    </body>
+    <script src = "AvrilLavigne-Registration.js"></script>
+    <script type= text/javascript>
+        
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementsByClassName("Nav")[0];
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        
+        
+        
+        
+    </script>
+</html>
